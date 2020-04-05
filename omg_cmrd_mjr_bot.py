@@ -10,7 +10,7 @@ def send_welcome(message):
 @bot.message_handler(func=lambda m: True)
 def echo_all(message):
 	if message.text == "Привет!":
-	    bbot.send_message(message.chat.id, "Привет, чем я могу тебе помочь?")
+	    bot.send_message(message.chat.id, "Привет, чем я могу тебе помочь?")
 	elif message.text == "/help":
 	    bot.send_message(message.chat.id, "Напиши: Привет!")
 	else:
